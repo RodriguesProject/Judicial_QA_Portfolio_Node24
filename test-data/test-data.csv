@@ -1,0 +1,4 @@
+case_number,subject,valid_role,restricted_role
+00001-2026,Valid judicial case,ANALYST,CLERK
+00002-2026,Boundary subject test,CLERK,GUEST
+00003-2026,Duplicate case test,ANALYST,CLERK

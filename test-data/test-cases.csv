@@ -1,0 +1,8 @@
+ID,Requirement,Scenario,Precondition,Expected Result,Priority,Type
+TC-001,FR-001,Register valid case,Authorized role,System creates case,High,Functional
+TC-002,FR-002,Reject missing mandatory subject,Authorized role,System blocks save,High,Negative Functional
+TC-003,FR-003,Update case status,Analyst role,System updates status,High,Functional
+TC-004,FR-005,Unauthorized status update,Clerk role,System returns 403,Critical,Security
+TC-005,FR-004,Audit trail after status change,Case exists,Audit records user/time/action,High,Integration
+TC-006,FR-003+FR-004,Complete register-to-audit flow,Analyst role,Workflow completes with traceability,Critical,End-to-End
+TC-007,FR-001,Regression new case after status workflow,Environment available,New case still registers,High,Regression
